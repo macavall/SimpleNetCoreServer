@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\macavall\\Training\\2024-02-18\\proj1\\proj1.csproj": {}
+    "c:\\Users\\macavall\\Training\\2024-02-18\\proj1\\proj1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\macavall\\Training\\2024-02-18\\proj1\\proj1.csproj": {
+    "c:\\Users\\macavall\\Training\\2024-02-18\\proj1\\proj1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\macavall\\Training\\2024-02-18\\proj1\\proj1.csproj",
+        "projectUniqueName": "c:\\Users\\macavall\\Training\\2024-02-18\\proj1\\proj1.csproj",
         "projectName": "proj1",
-        "projectPath": "C:\\Users\\macavall\\Training\\2024-02-18\\proj1\\proj1.csproj",
+        "projectPath": "c:\\Users\\macavall\\Training\\2024-02-18\\proj1\\proj1.csproj",
         "packagesPath": "C:\\Users\\macavall\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\macavall\\Training\\2024-02-18\\proj1\\obj\\",
+        "outputPath": "c:\\Users\\macavall\\Training\\2024-02-18\\proj1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\macavall\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",

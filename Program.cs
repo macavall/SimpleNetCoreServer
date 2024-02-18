@@ -32,8 +32,11 @@ class Program
 
     static void HandleRequest(HttpListenerContext context)
     {
-        string responseString = "Hello from the server!";
+        string responseString = "Hello from the server!Hello from the server!Hello from the server!Hello from the server!Hello from the server!Hello from the server!Hello from the server!Hello from the server!Hello from the server!";
         byte[] responseBytes = Encoding.UTF8.GetBytes(responseString);
+
+        Console.WriteLine(responseBytes.Length);
+        Console.WriteLine(responseBytes.Length*0.5);
 
         context.Response.ContentType = "text/plain";
         context.Response.ContentLength64 = responseBytes.Length;
@@ -45,7 +48,7 @@ class Program
             {
                 writer.Write((char)b);
                 writer.Flush();
-                System.Threading.Thread.Sleep(100); // Delay 100 milliseconds (10 bytes per second)
+                System.Threading.Thread.Sleep(50); // Delay 100 milliseconds (10 bytes per second)
             }
         }
 
