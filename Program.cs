@@ -37,9 +37,17 @@ class Program
 
         context.Response.ContentType = "text/plain";
         context.Response.ContentLength64 = responseBytes.Length;
-        Stream output = context.Response.OutputStream;
-        output.Write(responseBytes, 0, responseBytes.Length);
-        output.Close();
+
+        using (Stream output = context.Response.OutputStream)
+        using (StreamWriter writer = new StreamWriter(output))
+        {
+            foreach (byte b in responseBytes)
+            {
+                writer.Write((char)b);
+                writer.Flush();
+                System.Threading.Thread.Sleep(100); // Delay 100 milliseconds (10 bytes per second)
+            }
+        }
 
         Console.WriteLine($"Handled request from {context.Request.RemoteEndPoint}");
     }
